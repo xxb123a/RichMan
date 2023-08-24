@@ -1,0 +1,78 @@
+{
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [{
+				"name": "正和生态",
+				"lastDayPrice": 13.81,
+				"findPrice": 15.19,
+				"max": 15.19,
+				"min": 12.43,
+				"start": 12.8,
+				"level": 5,
+				"desc": "环保-日本福岛排污"
+			},
+			{
+				"name": "新炬网络",
+				"lastDayPrice": 34.12,
+				"findPrice": 37.53,
+				"max": 37.53,
+				"min": 37.53,
+				"start": 37.53,
+				"level": 4,
+				"desc": "数据要素+MLOps"
+			},
+			{
+				"name": "江盐集团",
+				"lastDayPrice": 15.69,
+				"findPrice": 17.26,
+				"max": 17.26,
+				"min": 15.15,
+				"start": 16.46,
+				"level": 3,
+				"desc": "核污染+次新股-日本福岛排污"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [{
+			"do": 0,
+			"name": "久其",
+			"mode": 1,
+			"isModeI": false,
+			"buyPrice": 15.14,
+			"sellPrice": 13.14,
+			"value": 100
+		}]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 33,
+		"sbs": 10,
+		"min_five": 100,
+		"hpb": 0.4,
+		"kq": 5,
+		"shpb": 0.6,
+		"sbdmb": 0.3,
+		"lhpb": 0.7,
+		"lbdmb": 0.3,
+		"lbbl": 0.4,
+		"lb_wlb": 0.3,
+		"fbv": 0.3,
+		"_20hpb": 0.3,
+		"_20sfbl": 0.3,
+		"zq": 1
+	},
+
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"",
+		"strategy":[
+		{
+			"cause":"",
+			"target":"",
+			"info":""
+		}
+		]
+	}
+}
