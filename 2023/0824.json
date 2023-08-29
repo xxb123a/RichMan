@@ -68,6 +68,7 @@
 	"next_action": {
 		"desc": "下一个交易日策略",
 		"summarize":"",
+		"zq": 1,
 		"strategy":[
 		{
 			"battleMode": 0,
