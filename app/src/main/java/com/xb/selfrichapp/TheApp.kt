@@ -1,6 +1,7 @@
 package com.xb.selfrichapp
 
 import android.app.Application
+import com.xb.selfrichapp.manager.WorkModeManager
 
 /**
  *_    .--,       .--,
@@ -27,5 +28,6 @@ class TheApp : Application() {
     override fun onCreate() {
         super.onCreate()
         mInstance = this
+        WorkModeManager.init()
     }
 }

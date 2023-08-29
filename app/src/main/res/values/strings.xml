@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SelfRichApp</string>
+    <string name="t_refresh_zf">刷新战法</string>
 </resources>

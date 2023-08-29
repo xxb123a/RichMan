@@ -24,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".act.TextShowActivity"/>
+        <activity android:name=".act.ZfShowActivity"/>
     </application>
 
 </manifest>
