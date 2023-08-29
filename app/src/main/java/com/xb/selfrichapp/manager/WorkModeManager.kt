@@ -1,12 +1,15 @@
 package com.xb.selfrichapp.manager
 
 import com.xb.selfrichapp.entity.BattleMode
+import com.xb.selfrichapp.entity.DayDataEntity
+import com.xb.selfrichapp.entity.EntityTools
 import com.xb.selfrichapp.entity.PeriodicNode
 import com.xb.selfrichapp.http.DataApi
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import org.json.JSONObject
+import java.text.SimpleDateFormat
 import java.util.*
 
 /**
@@ -27,13 +30,19 @@ import java.util.*
  * description :
  */
 object WorkModeManager {
+    private val mHolidays = ArrayList<String>()
     private val mPeriodicNodeList = Collections.synchronizedList(ArrayList<PeriodicNode>())
     private val mBattleModeList = Collections.synchronizedList(ArrayList<BattleMode>())
     private var isInitLoad = false
 
     fun init() {
         refreshZf(false) {}
+        val year = Calendar.getInstance().get(Calendar.YEAR)
+        refreshHoliday(year) {
+
+        }
     }
+
 
     fun refreshZf(isForce: Boolean, callback: () -> Unit) {
         val dis = Observable.just(isForce)
@@ -42,6 +51,38 @@ object WorkModeManager {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe { callback.invoke() }
+    }
+
+    fun refreshHoliday(year: Int, callback: () -> Unit) {
+        val dis = Observable.just(year)
+            .map { DataApi.getHolidayContent(it) }
+            .map { parseHoliday(it) }
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe { callback.invoke() }
+    }
+
+    fun getDayData(time: Long, isForce: Boolean, callback: (DayDataEntity) -> Unit) {
+        val dis = Observable.just(time)
+            .map { DataApi.getDataByTime(isForce, it) }
+            .map { EntityTools.parseDay(it) }
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe { callback.invoke(it) }
+    }
+
+    private fun parseHoliday(content: String) {
+        try {
+            val data = JSONObject(content).getJSONArray("data")
+            val list = ArrayList<String>()
+            for (idx in 0 until data.length()) {
+                list.add(data.optString(idx))
+            }
+            mHolidays.clear()
+            mHolidays.addAll(list)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     private fun parse2ZfInfo(content: String): Boolean {
@@ -89,6 +130,24 @@ object WorkModeManager {
         return false
     }
 
+    fun isHoliday(time: Long): Boolean {
+        val calendar = Calendar.getInstance()
+        calendar.timeInMillis = time
+        val sdf = SimpleDateFormat("MMdd", Locale.getDefault())
+        val date = sdf.format(calendar.time)
+
+        val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK)
+        if (dayOfWeek == Calendar.SUNDAY || dayOfWeek == Calendar.SATURDAY) {
+            return true
+        }
+        for (mHoliday in mHolidays) {
+            if (date == mHoliday) {
+                return true
+            }
+        }
+        return false
+    }
+
     fun getPeriodicNode(): List<PeriodicNode> {
         return mPeriodicNodeList
     }
@@ -97,10 +156,19 @@ object WorkModeManager {
         return mBattleModeList
     }
 
-    fun findPeriodicNode(id:Int):PeriodicNode{
+    fun findPeriodicNode(id: Int): PeriodicNode {
         for (periodicNode in mPeriodicNodeList) {
-            if(periodicNode.id == id)return periodicNode
+            if (periodicNode.id == id) return periodicNode
         }
-        return PeriodicNode(-1,"通用","适用所有周期 只需要满足条件")
+        return PeriodicNode(-1, "通用", "适用所有周期 只需要满足条件")
+    }
+
+    fun findBattleMode(id: Int): BattleMode {
+        for (battleMode in mBattleModeList) {
+            if (battleMode.id == id) {
+                return battleMode
+            }
+        }
+        return BattleMode("未知", -1, arrayListOf(), arrayListOf())
     }
 }

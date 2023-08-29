@@ -2,6 +2,7 @@ package com.xb.selfrichapp
 
 import android.app.Application
 import com.xb.selfrichapp.manager.WorkModeManager
+import com.xb.selfrichapp.prefs.PreferenceManager
 
 /**
  *_    .--,       .--,
@@ -29,5 +30,6 @@ class TheApp : Application() {
         super.onCreate()
         mInstance = this
         WorkModeManager.init()
+        PreferenceManager.initSingleton(this)
     }
 }

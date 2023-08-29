@@ -40,6 +40,10 @@ object DataApi {
     const val base_host = "https://raw.githubusercontent.com/xxb123a/RichMan/main"
     const val zfJson = "/zf.json"
 
+    private fun getHolidayName(year:Int):String{
+        return "$base_host/Holidays/$year.json"
+    }
+
     private fun createDataName(time: Long): String {
         val calendar = Calendar.getInstance()
         val sdf = SimpleDateFormat("MMdd", Locale.getDefault())
@@ -60,14 +64,33 @@ object DataApi {
         return content
     }
 
-    fun getDataByTime(time: Long): String {
-        val cacheContent = readStringByFile(getDataPath(time))
-        if (cacheContent.isNotEmpty()) {
-            return cacheContent
+    fun getDataByTime(isReload:Boolean, time: Long): String {
+        if(!isReload){
+            val cacheContent = readStringByFile(getDataPath(time))
+            if (cacheContent.isNotEmpty()) {
+                return cacheContent
+            }
         }
         val content = getUrlContent(base_host + createDataName(time), createCommonOkHttp())
         if (content.isNotEmpty() && content.trim().startsWith("{")) {
             save2File(content, getDataPath(time))
+        }
+        return content
+    }
+
+    fun hasDownloadDayContent(time:Long):Boolean{
+        val cacheContent = readStringByFile(getDataPath(time))
+        return cacheContent.isNotEmpty()
+    }
+
+    fun getHolidayContent(year:Int):String{
+        val cacheContent = readStringByFile(getHolidayPath(year))
+        if (cacheContent.isNotEmpty()) {
+            return cacheContent
+        }
+        val content = getUrlContent(getHolidayName(year), createCommonOkHttp())
+        if (content.isNotEmpty() && content.trim().startsWith("{")) {
+            save2File(content, getHolidayPath(year))
         }
         return content
     }
@@ -102,6 +125,14 @@ object DataApi {
         return file.absolutePath
     }
 
+    private fun getHolidayCachePath():String{
+        val file = File(getCacheRoot(), "holiday")
+        if (!file.exists()) {
+            file.mkdirs()
+        }
+        return file.absolutePath
+    }
+
     private fun getOtherCachePath(): String {
         val file = File(getCacheRoot(), "other")
         if (!file.exists()) {
@@ -117,6 +148,10 @@ object DataApi {
 
     private fun getZfCachePath(): String {
         return File(getOtherCachePath(), "zf.json").absolutePath
+    }
+
+    private fun getHolidayPath(year:Int):String{
+        return File(getHolidayCachePath(), "$year.json").absolutePath
     }
 
     private fun readStringByFile(path: String): String {
