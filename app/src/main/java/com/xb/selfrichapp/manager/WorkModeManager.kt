@@ -71,6 +71,12 @@ object WorkModeManager {
             .subscribe { callback.invoke(it) }
     }
 
+    private fun getLocalDayData(time:Long):DayDataEntity?{
+        val content = DataApi.getLocalDayData(time)
+        if(content.isEmpty())return null
+        return EntityTools.parseDay(content)
+    }
+
     private fun parseHoliday(content: String) {
         try {
             val data = JSONObject(content).getJSONArray("data")
@@ -130,6 +136,17 @@ object WorkModeManager {
         return false
     }
 
+    fun findLastActionDay(time:Long):Long{
+        val calendar = Calendar.getInstance()
+        calendar.timeInMillis = time
+        while (true){
+            calendar.add(Calendar.DATE,-1)
+            if(!isHoliday(calendar.timeInMillis)){
+                return calendar.timeInMillis
+            }
+        }
+    }
+
     fun isHoliday(time: Long): Boolean {
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = time
@@ -154,6 +171,11 @@ object WorkModeManager {
 
     fun getBattleMode(): List<BattleMode> {
         return mBattleModeList
+    }
+
+    fun findPreDayData(time:Long):DayDataEntity?{
+        val lastTime = findLastActionDay(time)
+        return getLocalDayData(lastTime)
     }
 
     fun findPeriodicNode(id: Int): PeriodicNode {

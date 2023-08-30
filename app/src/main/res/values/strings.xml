@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SelfRichApp</string>
+    <string name="app_name">今日情绪</string>
     <string name="t_refresh_zf">刷新战法</string>
     <string name="t_modify_show_time">修改展示时间</string>
     <string name="t_zf_list">战法列表</string>

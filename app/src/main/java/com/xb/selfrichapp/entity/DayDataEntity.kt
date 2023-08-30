@@ -243,6 +243,107 @@ class EmotionalCycle {
 
     // 热点板块
     var hotBlock = arrayListOf<String>()
+
+    //获取势能
+    fun getPotentialEnergy():Int{
+        var value = 0
+        //连板
+        value += if(lbs < 10){
+            -2
+        }else{
+            2
+        }
+        //涨停
+        value += if(sbs < 40){
+            -2
+        }else{
+            2
+        }
+        //小于-5个股
+        value += if(minFive < 100){
+            2
+        }else{
+            -2
+        }
+
+        value += if(hpb < 0.4){
+            -2
+        }else{
+            +2
+        }
+
+        value += if(kq < 2){
+            +2
+        }else{
+            -2
+        }
+        return value
+    }
+    //获取动能
+    fun getKineticEnergy():Int{
+        var value = 0
+        //首板红盘比
+        value += if(shpb < 0.6){
+            -2
+        }else{
+            +2
+        }
+        //首板大面比
+        value += if(sbdmb > 0.3){
+            -2
+        }else{
+            +2
+        }
+        //连板红盘比
+        value += if(lhpb < 0.6){
+            -2
+        }else{
+            +2
+        }
+        //连板大面比
+        value += if(lbdmb > 0.3){
+            -2
+        }else{
+            +2
+        }
+        //连板比例
+        value += if(lbbl < 0.8){
+            -2
+        }else{
+            +2
+        }
+        //连板断板，绿盘比
+        value += if(lbWlb < 0.5){
+            -2
+        }else{
+            +2
+        }
+        return value
+    }
+
+    fun getAutoInfer() : String{
+        val pe = getPotentialEnergy()
+        val ke = getKineticEnergy()
+       return  if((shpb >= 0.8 && lhpb >= 0.8) || (pe == 10 && ke == 12)){
+            "这里是一个高潮点，注意 如果是冰点后的可以看作启动，如果是主升后的需要注意风险"
+        }else if(lhpb >= 0.8){
+            "这里是一个半高潮点，如果前一天是冰点 那么这里是启动了，如果不是那么就判断是否是周期尾声"
+        }else if(ke >= 4 ){
+            "这里周期很有可能启动了，可以自行判断是否可以开始试错"
+        } else if(pe <= -2 && ke <= -12){
+            "这里是一个极致冰点，明日可以尝试龙pk"
+        }else if(pe <= -2 && ke <= -8){
+            if(pe == -10){
+                "1、如果是创业指数破5日线，请确认首板连板是否都出现过红盘比小于0.4 \n 2、如果是5日先上方 这里可能是一个冰点，请结合昨日是否也是势能-2 & 动能 -8"
+            }else{
+                "这里可能是一个冰点，请结合昨日是否也是势能-2 & 动能 -8"
+            }
+        } else if(pe <= -6 && ke <= -6){
+            "如果这里创业指数破5日线，结合上一日势能 -6 & 动能 -6 可以确认冰点"
+        }else{
+            "未能推演出冰点 势能 : $pe 动能：$ke"
+        }
+    }
 }
 
 class DayStrategy {
@@ -265,6 +366,34 @@ class StrategyEntity {
 class BoomEntity {
     var data = arrayListOf<BoomStock>()
     var lastResult = BoomLastResult()
+
+    fun lastBoomValue():Int{
+        var value = 0
+        value += if(lastResult.hpb < 0.5){
+            -2
+        }else{
+            2
+        }
+        value += if(lastResult.dmb > 0.3){
+            -2
+        }else{
+            2
+        }
+        return value
+    }
+
+    fun boomFearCount():Int{
+        var value = 0
+        for (datum in data) {
+            val offset = datum.lastDayPrice - datum.endPrice
+            if(offset <= 0) continue
+            val percentValue = offset * 100f / datum.lastDayPrice
+            if(percentValue > 7){
+                value += 1
+            }
+        }
+        return value
+    }
 }
 
 //"name": "正和生态",

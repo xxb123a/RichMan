@@ -64,9 +64,13 @@ object DataApi {
         return content
     }
 
+    fun getLocalDayData(time: Long):String{
+        return readStringByFile(getDataPath(time))
+    }
+
     fun getDataByTime(isReload:Boolean, time: Long): String {
         if(!isReload){
-            val cacheContent = readStringByFile(getDataPath(time))
+            val cacheContent = getLocalDayData(time)
             if (cacheContent.isNotEmpty()) {
                 return cacheContent
             }
