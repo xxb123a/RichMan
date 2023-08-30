@@ -47,17 +47,10 @@ class MainActivity : AppCompatActivity() {
             return
         }
         val da = dde.mNextDayAction
-        if (da.zqId < 3) {
-            mMainView.setBackgroundColor(Color.GREEN)
-            mTvContent.setTextColor(Color.WHITE)
-        } else {
-            mMainView.setBackgroundColor(Color.RED)
-            mTvContent.setTextColor(Color.WHITE)
-        }
         val sb = StringBuilder()
         val lastBoomValue = dde.mBoom.lastBoomValue()
         sb.append("昨日炸板今日情绪值 : ").append(lastBoomValue)
-        if (lastBoomValue <= 4) {
+        if (lastBoomValue < 0) {
             sb.append(" 明日注意风险")
         }
         val boomValue = dde.mBoom.boomFearCount()
@@ -73,7 +66,18 @@ class MainActivity : AppCompatActivity() {
             sb.append("昨日动能：").append(lastEc.getKineticEnergy())
         }
         sb.append("\n势能：").append(mEmotionalCycle.getPotentialEnergy())
-        sb.append("动能：").append(mEmotionalCycle.getKineticEnergy())
+
+        val ke = mEmotionalCycle.getKineticEnergy()
+        sb.append("动能：").append(ke)
+
+        if (ke > 0) {
+            mMainView.setBackgroundColor(Color.GREEN)
+            mTvContent.setTextColor(Color.WHITE)
+        } else {
+            mMainView.setBackgroundColor(Color.RED)
+            mTvContent.setTextColor(Color.WHITE)
+        }
+
         sb.append("\n系统推演：").append(mEmotionalCycle.getAutoInfer())
         if (da.zqId in 4..5) {
             sb.append("\n 警告 : \n 今日很危险，危险，危险").append("\n")

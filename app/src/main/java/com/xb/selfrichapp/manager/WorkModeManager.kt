@@ -93,6 +93,8 @@ object WorkModeManager {
 
     private fun parse2ZfInfo(content: String): Boolean {
         try {
+            mBattleModeList.clear()
+            mPeriodicNodeList.clear()
             val json = JSONObject(content)
             val qxzq = json.getJSONArray("qxzq")
             for (idx in 0 until qxzq.length()) {
