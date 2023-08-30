@@ -175,6 +175,11 @@ class DayDataEntity {
     fun createUserActionShowText(): String {
         val sb = StringBuilder()
         for (stockAction in userAction) {
+            if(stockAction.isModeI){
+                sb.append("模式内")
+            }else{
+                sb.append("模式外")
+            }
             if (stockAction._do > 0) {
                 sb.append("买入：")
                 sb.append(stockAction.name)
