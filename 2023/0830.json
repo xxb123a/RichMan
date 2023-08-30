@@ -1,0 +1,166 @@
+{
+	"previous_date": "20230929",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [{
+				"name": "智洋创新",
+				"is20": 1,
+				"endPrice": 21.84,
+				"min": 21.84,
+				"start": 21.84,
+				"level": 4,
+				"desc": "华为Mate 60 pro+半年报增长"
+			},
+			{
+				"name": "盛邦安全",
+				"is20": 1,
+				"endPrice": 65.53,
+				"min": 57.44,
+				"start": 57.50,
+				"level": 4,
+				"desc": "华为Mate 60 pro+数据安全"
+			},
+			{
+				"name": "智云智能",
+				"is20": 1,
+				"endPrice": 8.14,
+				"min": 7.00,
+				"start": 7.10,
+				"level": 2,
+				"desc": "华为Mate 60 pro+机器人概念"
+			},
+			{
+				"name": "德邦科技",
+				"is20": 1,
+				"endPrice": 58.78,
+				"min": 52.88,
+				"start": 52.88,
+				"level": 2,
+				"desc": "华为Mate 60 pro+芯片"
+			},
+			{
+				"name": "强瑞技术",
+				"is20": 1,
+				"endPrice": 39.06,
+				"min": 33.16,
+				"start": 33.16,
+				"level": 2,
+				"desc": "华为Mate 60 pro+消费电子"
+			},
+			{
+				"name": "零点有数",
+				"is20": 1,
+				"endPrice": 79.15,
+				"min": 58.01,
+				"start": 62.30,
+				"level": 2,
+				"desc": "数据要素+人工智能"
+			},
+			{
+				"name": "利扬芯片",
+				"is20": 1,
+				"endPrice": 22.93,
+				"min": 20.30,
+				"start": 20.80,
+				"level": 2,
+				"desc": "芯片+卫星导航"
+			},
+			{
+				"name": "友讯达",
+				"is20": 1,
+				"endPrice": 14.77,
+				"min": 14.58,
+				"start": 14.6,
+				"level": 2,
+				"desc": "芯片+中报"
+			},
+			{
+				"name": "银信科技",
+				"is20": 1,
+				"endPrice": 11.11,
+				"min": 9.48,
+				"start": 9.48,
+				"level": 2,
+				"desc": "华为Mate 60 pro+存储芯片"
+			},
+			{
+				"name": "康鹏科技",
+				"is20": 1,
+				"endPrice": 13.58,
+				"min": 11.49,
+				"start": 11.51,
+				"level": 2,
+				"desc": "光刻胶+次新"
+			},
+			{
+				"name": "海昌新材",
+				"is20": 1,
+				"endPrice": 12.89,
+				"min": 11.38,
+				"start": 11.64,
+				"level": 2,
+				"desc": "机器人概念"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [{
+			"do": 0,
+			"name": "珠江股份",
+			"mode": -1,
+			"isModeI": false,
+			"buyPrice": 5.42,
+			"sellPrice": 5.28,
+			"value": 1300
+		}]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 10,
+		"sbs": 36,
+		"min_five": 94,
+		"hpb": 0.61,
+		"kq": 2.6,
+		"shpb": 0.78,
+		"sbdmb": 0.11,
+		"lhpb": 1,
+		"lbdmb": 1,
+		"lbbl": 0.55,
+		"lb_wlb": 0.28,
+		"fbv": 0.67,
+		"_20hpb": 0.78,
+		"_20sfbl": 0.47,
+		"_20_count",10,
+		"zq": 1,
+		"hot_block":["华为概念","芯片"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"坚持一件事做一万遍",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 3,
+			"cause":"无",
+			"target":"无",
+			"info":"20cm 周期可采用龙pk手法和 阶梯战法"
+		},
+		{
+			"battleMode": 1,
+			"cause":"无",
+			"target":"智洋创新/盛邦安全",
+			"info":"20cm 周期可采用龙pk手法和 阶梯战法"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":1,
+			"dmb":0
+		}
+	}
+}
