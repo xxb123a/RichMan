@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.act.CommonSettingActivity
+import com.xb.selfrichapp.act.TextShowActivity
 import com.xb.selfrichapp.entity.DayDataEntity
 import com.xb.selfrichapp.entity.EmotionalCycle
 import com.xb.selfrichapp.manager.WorkModeManager
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private var mLastLoadTime = 0L
     private val mMainView by lazy { findViewById<View>(R.id.main_content) }
     private val mTvContent by lazy { findViewById<TextView>(R.id.tv_content) }
+    private var mDayData:DayDataEntity? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,11 +43,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun showContent(dde: DayDataEntity) {
         if (dde.limitDown.isEmpty()) {
+            mDayData = null
             mTvContent.text = "暂时无数据"
             mMainView.setBackgroundColor(Color.WHITE)
             mTvContent.setTextColor(Color.BLACK)
             return
         }
+        mDayData = dde
         val da = dde.mNextDayAction
         val sb = StringBuilder()
         val lastBoomValue = dde.mBoom.lastBoomValue()
@@ -105,12 +109,30 @@ class MainActivity : AppCompatActivity() {
         menu?.add(0, R.id.main_setting, 0, "设置")?.apply {
             setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
         }
+        menu?.add(0, R.id.main_limit_down, 0, "连板数据")?.apply {
+            setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
+        }
+        menu?.add(0, R.id.main_user_action, 0, "用户操作")?.apply {
+            setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
+        }
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.main_setting) {
-            CommonSettingActivity.launch(this)
+        when (item.itemId) {
+            R.id.main_setting -> {
+                CommonSettingActivity.launch(this)
+            }
+            R.id.main_limit_down -> {
+                mDayData?.let {
+                    TextShowActivity.launch(this,"连板数据",it.createLimitDownShowText())
+                }
+            }
+            R.id.main_user_action -> {
+                mDayData?.let {
+                    TextShowActivity.launch(this,"用户操作",it.createUserActionShowText())
+                }
+            }
         }
         return super.onOptionsItemSelected(item)
     }

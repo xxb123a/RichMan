@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="main_setting" type="id"/>
+    <item name="main_limit_down" type="id"/>
+    <item name="main_user_action" type="id"/>
 </resources>

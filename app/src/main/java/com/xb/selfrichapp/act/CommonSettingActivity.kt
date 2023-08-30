@@ -42,6 +42,7 @@ class CommonSettingActivity : AppCompatActivity() {
         }
     }
 
+
     private fun commonClick(@IdRes id: Int, callback: () -> Unit) {
         findViewById<View>(id).setOnClickListener { callback.invoke() }
     }

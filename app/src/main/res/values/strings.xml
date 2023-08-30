@@ -4,4 +4,6 @@
     <string name="t_modify_show_time">修改展示时间</string>
     <string name="t_zf_list">战法列表</string>
     <string name="t_home_setting">首页展示设置</string>
+    <string name="t_scan_limit_down">查看连板</string>
+    <string name="t_scan_user">查看用户操作</string>
 </resources>
