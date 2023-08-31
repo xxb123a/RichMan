@@ -90,12 +90,12 @@ class MainActivity : AppCompatActivity() {
         val lastEc = WorkModeManager.findPreDayData(mLastLoadTime)?.mEmotionalCycle
         if(lastEc != null){
             sb.append("\n昨日势能：").append(lastEc.getPotentialEnergy())
-            sb.append("昨日动能：").append(lastEc.getKineticEnergy())
+            sb.append(" 昨日动能：").append(lastEc.getKineticEnergy())
         }
         val ke = mEmotionalCycle.getKineticEnergy()
         val pe = mEmotionalCycle.getPotentialEnergy()
-        sb.append("\n势能：").append(pe)
-        sb.append(" 动能：").append(ke)
+        sb.append("\n  势能：").append(pe)
+        sb.append("   动能：").append(ke)
         sb.append("\n")
         if (ke > 0) {
             mMainView.setBackgroundColor(Color.GREEN)

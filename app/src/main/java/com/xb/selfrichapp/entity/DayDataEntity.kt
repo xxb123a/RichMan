@@ -340,37 +340,37 @@ class EmotionalCycle {
         value += if (shpb < 0.6) {
             -2
         } else {
-            +2
+            2
         }
         //首板大面比
         value += if (sbdmb > 0.3) {
             -2
         } else {
-            +2
+            2
         }
         //连板红盘比
         value += if (lhpb < 0.6) {
             -2
         } else {
-            +2
+            2
         }
         //连板大面比
         value += if (lbdmb > 0.3) {
             -2
         } else {
-            +2
+            2
         }
         //连板比例
         value += if (lbbl < 0.8) {
             -2
         } else {
-            +2
+            2
         }
         //连板断板，绿盘比
         value += if (lbWlb < 0.5) {
-            -2
+            2
         } else {
-            +2
+            -2
         }
         return value
     }
