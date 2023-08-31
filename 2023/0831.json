@@ -1,0 +1,143 @@
+{
+	"previous_date": "20230830",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [{
+				"name": "我乐家居",
+				"is20": 0,
+				"endPrice": 11.02,
+				"min": 10.58,
+				"start": 10.76,
+				"level": 4,
+				"desc": "半年报增长+定制家具"
+			},
+			{
+				"name": "庚星股份",
+				"is20": 0,
+				"endPrice": 12.98,
+				"min": 12.08,
+				"start": 12.50,
+				"level": 3,
+				"desc": "芯片"
+			},
+			{
+				"name": "中马传动",
+				"is20": 0,
+				"endPrice": 18.37,
+				"min": 16.93,
+				"start": 17.41,
+				"level": 3,
+				"desc": "机器人+减速器"
+			},
+			{
+				"name": "盛邦安全",
+				"is20": 1,
+				"endPrice": 78.64,
+				"min": 67.60,
+				"start": 70.00,
+				"level": 3,
+				"desc": "华为Mate 60 pro+次新"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 12.10,
+				"min": 12.10,
+				"start": 12.10,
+				"level": 2,
+				"desc": "华为Mate 60 pro"
+			},
+			{
+				"name": "智云股份",
+				"is20": 1,
+				"endPrice": 9.77,
+				"min": 8.67,
+				"start": 8.70,
+				"level": 2,
+				"desc": "华为概念+机器人概念"
+			},
+			{
+				"name": "通化金马",
+				"is20": 0,
+				"endPrice": 7.47,
+				"min": 6.76,
+				"start": 6.85,
+				"level": 2,
+				"desc": "中药+大麻"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [{
+			"do": 1,
+			"name": "我乐家居",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 11.02,
+			"sellPrice": 0,
+			"value": 400
+		},
+		{
+			"do": 1,
+			"name": "中贝通信",
+			"mode": -1,
+			"isModeI": false,
+			"buyPrice": 26.45,
+			"sellPrice": 0,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 12,
+		"sbs": 32,
+		"min_five": 110,
+		"hpb": 0.35,
+		"kq": 3.34,
+		"shpb": 0.57,
+		"sbdmb": 0.05,
+		"lhpb": 0.71,
+		"lbdmb": 0.14,
+		"lbbl": 0.85,
+		"lb_wlb": 0.5,
+		"fbv": 0.78,
+		"_20hpb": 0.5,
+		"_20sfbl": 0.67,
+		"_20_count":6,
+		"zq": 2,
+		"hot_block":["无：轮动行情"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"坚持一件事做一万遍 练习龙pk 对比强度",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"无",
+			"target":"无",
+			"info":"1、不开仓\n2、中贝有冲高机会就出，我乐家居 尽量多格局 如果太弱按妖股卖股方法"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[{
+			"name": "大豪科技",
+			"lastDayPrice": 16.85,
+			"endPrice": 15.17,
+			"max": 17.11,
+			"min": 15.17,
+			"start": 16.85,
+			"level": 3,
+			"desc": "芯片"
+		}],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0,
+			"dmb":0.4
+		}
+	}
+}
