@@ -1,0 +1,128 @@
+{
+	"previous_date": "20230904",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [{
+				"name": "我乐家居",
+				"is20": 0,
+				"endPrice": 14.66,
+				"min": 14.39,
+				"start": 14.66,
+				"level": 7,
+				"desc": "半年报增长+定制家具"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 16.10,
+				"min": 16.10,
+				"start": 16.10,
+				"level": 5,
+				"desc": "华为+消费电子"
+			},
+			{
+				"name": "云煤能源",
+				"is20": 0,
+				"endPrice": 4.47,
+				"min": 4.38,
+				"start": 4.40,
+				"level": 3,
+				"desc": "煤炭+甲醛"
+			},
+			{
+				"name": "华映科技",
+				"is20": 0,
+				"endPrice": 2.40,
+				"min": 2.18,
+				"start": 2.19,
+				"level": 2,
+				"desc": "华为+面板"
+			},
+			{
+				"name": "瀛通通讯",
+				"is20": 0,
+				"endPrice": 14.27,
+				"min": 14.27,
+				"start": 14.27,
+				"level": 2,
+				"desc": "华为+消费电子"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [{
+			"do": -1,
+			"name": "我乐家居",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 11.02,
+			"sellPrice": 14.66,
+			"value": 400
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 7,
+		"sbs": 19,
+		"min_five": 27,
+		"hpb": 0.8,
+		"kq": 0.56,
+		"shpb": 0.75,
+		"sbdmb": 0.06,
+		"lhpb": 0.80,
+		"lbdmb": 0.4,
+		"lbbl": 1.4,
+		"lb_wlb": 0.5,
+		"fbv": 0.76,
+		"_20hpb": 0.5,
+		"_20sfbl": 0.75,
+		"_20_count":3,
+		"zq": 2,
+		"hot_block":["华为概念"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"坚持一件事做一万遍 练习龙pk 对比强度",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 2,
+			"cause":"连板红盘个数大于5个",
+			"target":"无",
+			"info":"名牌龙：我乐 尽量不去操作"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "中迪投资",
+				"lastDayPrice": 7.51,
+				"endPrice": 6.76,
+				"max": 7.09,
+				"min": 6.76,
+				"start": 6.90,
+				"level": 2,
+				"desc": "地产+互联金融"
+			},
+			{
+				"name": "梦天家居",
+				"lastDayPrice": 16.30,
+				"endPrice": 14.68,
+				"max": 15.97,
+				"min": 14.68,
+				"start": 15.97,
+				"level": 2,
+				"desc": "家具"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.0,
+			"dmb":1.0
+		}
+	}
+}
