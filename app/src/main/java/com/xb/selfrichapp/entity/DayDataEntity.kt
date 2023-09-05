@@ -165,9 +165,9 @@ class DayDataEntity {
         for (stockEntity in result) {
             if (lastLevel != stockEntity.level) {
                 lastLevel = stockEntity.level
-                sb.append("$lastLevel 板\n")
+                sb.append("$lastLevel 板\n\n")
             }
-            sb.append(stockEntity.name).append(":").append(stockEntity.desc).append("\n")
+            sb.append(stockEntity.name).append(":").append(stockEntity.desc).append("\n\n")
         }
         return sb.toString()
     }
@@ -375,15 +375,27 @@ class EmotionalCycle {
         return value
     }
 
-    fun getAutoInfer(): String {
+    fun getAutoInfer(lastPe:Int,lastKe:Int): String {
         val pe = getPotentialEnergy()
         val ke = getKineticEnergy()
         return if ((shpb >= 0.8 && lhpb >= 0.8) || (pe == 10 && ke == 12)) {
-            "这里是一个高潮点，注意 如果是冰点后的可以看作启动，如果是主升后的需要注意风险"
+            if(lastKe > 0 ){
+                "这里很有可能是一个高潮点 需要注意风险 只减仓不加仓了"
+            }else{
+                "这里是一个冰点后的启动，可以用勇敢试错"
+            }
         } else if (lhpb >= 0.8) {
-            "这里是一个半高潮点，如果前一天是冰点 那么这里是启动了，如果不是那么就判断是否是周期尾声"
+            if(lastKe > 0 ){
+                "这里是一个半高潮点， 需要注意风险 只减仓不加仓了"
+            }else{
+                "这里是一个冰点后的启动，可以用勇敢试错"
+            }
         } else if (ke >= 4) {
-            "这里周期很有可能启动了，可以自行判断是否可以开始试错"
+            if(lastKe > 0 ){
+                "这里周期进入主升行情，如果没经历高潮可以大干特干"
+            }else{
+                "这里周期很有可能启动了，可以开始进攻了"
+            }
         } else if (pe <= -2 && ke <= -12) {
             "这里是一个极致冰点，明日可以尝试龙pk"
         } else if (pe <= -2 && ke <= -8) {

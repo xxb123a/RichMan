@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private var mLastLoadTime = 0L
     private val mMainView by lazy { findViewById<View>(R.id.main_content) }
     private val mTvContent by lazy { findViewById<TextView>(R.id.tv_content) }
-    private var mDayData:DayDataEntity? = null
+    private var mDayData: DayDataEntity? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -54,11 +54,11 @@ class MainActivity : AppCompatActivity() {
         val sb = StringBuilder()
         val lastBoomValue = dde.mBoom.lastBoomValue()
         sb.append("昨日炸板今日情绪值 : ").append(lastBoomValue)
-        calcQxz += if(lastBoomValue == 0){
+        calcQxz += if (lastBoomValue == 0) {
             5
-        }else if(lastBoomValue > 0){
+        } else if (lastBoomValue > 0) {
             10
-        }else{
+        } else {
             0
         }
         if (lastBoomValue < 0) {
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
         sb.append("\n")
         val mEmotionalCycle = dde.mEmotionalCycle
         val lastEc = WorkModeManager.findPreDayData(mLastLoadTime)?.mEmotionalCycle
-        if(lastEc != null){
+        if (lastEc != null) {
             sb.append("\n昨日势能：").append(lastEc.getPotentialEnergy())
             sb.append(" 昨日动能：").append(lastEc.getKineticEnergy())
         }
@@ -109,7 +109,12 @@ class MainActivity : AppCompatActivity() {
         calcQxz += calcQxByKe(ke)
 
 
-        sb.append("\n系统推演：").append(mEmotionalCycle.getAutoInfer())
+        sb.append("\n系统推演：").append(
+            mEmotionalCycle.getAutoInfer(
+                lastEc?.getPotentialEnergy() ?: -1,
+                lastEc?.getKineticEnergy() ?: -1
+            )
+        )
         sb.append("\n")
         if (da.zqId in 4..5) {
             sb.append("\n警告 : \n 今日很危险，危险，危险").append("\n")
@@ -119,9 +124,9 @@ class MainActivity : AppCompatActivity() {
         val pd = WorkModeManager.findPeriodicNode(da.zqId)
         sb.append("\n\n推演周期: ").append(pd.name).append("\n\n")
         //20
-        calcQxz += when(pd.id){
-            in 1..2->20
-            in 3..5->10
+        calcQxz += when (pd.id) {
+            in 1..2 -> 20
+            in 3..5 -> 10
             else -> 0
         }
         if (da.strategyArray.isEmpty()) {
@@ -140,33 +145,34 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun calcQxByPe(pe:Int):Int{
+    private fun calcQxByPe(pe: Int): Int {
         //10
-       return when (pe) {
-           -10 -> {
-               0
-           }
-           -6 -> {
-               2
-           }
-           -2 -> {
-               4
-           }
-           2 -> {
-               6
-           }
-           6 -> {
-               8
-           }
-           10 -> {
-               10
-           }
-           else -> {
-               0
-           }
-       }
+        return when (pe) {
+            -10 -> {
+                0
+            }
+            -6 -> {
+                2
+            }
+            -2 -> {
+                4
+            }
+            2 -> {
+                6
+            }
+            6 -> {
+                8
+            }
+            10 -> {
+                10
+            }
+            else -> {
+                0
+            }
+        }
     }
-    private fun calcQxByKe(ke:Int):Int{
+
+    private fun calcQxByKe(ke: Int): Int {
         //40 分
         return when (ke) {
             -12 -> {
@@ -216,12 +222,12 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.main_limit_down -> {
                 mDayData?.let {
-                    TextShowActivity.launch(this,"连板数据",it.createLimitDownShowText())
+                    TextShowActivity.launch(this, "连板数据", it.createLimitDownShowText())
                 }
             }
             R.id.main_user_action -> {
                 mDayData?.let {
-                    TextShowActivity.launch(this,"用户操作",it.createUserActionShowText())
+                    TextShowActivity.launch(this, "用户操作", it.createUserActionShowText())
                 }
             }
         }
