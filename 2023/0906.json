@@ -1,0 +1,118 @@
+{
+	"previous_date": "20230905",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [{
+				"name": "我乐家居",
+				"is20": 0,
+				"endPrice": 16.13,
+				"min": 15.33,
+				"start": 15.40,
+				"level": 8,
+				"desc": "半年报增长+定制家具"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 17.71,
+				"min": 17.07,
+				"start": 17.20,
+				"level": 6,
+				"desc": "华为+消费电子"
+			},
+			{
+				"name": "华映科技",
+				"is20": 0,
+				"endPrice": 2.64,
+				"min": 2.46,
+				"start": 4.46,
+				"level": 3,
+				"desc": "华为+面板"
+			},
+			{
+				"name": "跃岭股份",
+				"is20": 0,
+				"endPrice": 11.44,
+				"min": 11.12,
+				"start": 11.40,
+				"level": 2,
+				"desc": "芯片+铝合金"
+			},
+			{
+				"name": "广信材料",
+				"is20": 0,
+				"endPrice": 21.94,
+				"min": 19.42,
+				"start": 19.94,
+				"level": 2,
+				"desc": "光刻胶+PCB"
+			},
+			{
+				"name": "蓝箭电子",
+				"is20": 1,
+				"endPrice": 65.32,
+				"min": 52.11,
+				"start": 52.11,
+				"level": 2,
+				"desc": "先进封装+华为"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [{
+			"do": 1,
+			"name": "我乐家居",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 16.13,
+			"sellPrice": 0.00,
+			"value": 200
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 6,
+		"sbs": 37,
+		"min_five": 100,
+		"hpb": 0.31,
+		"kq": 5.2,
+		"shpb": 0.47,
+		"sbdmb": 0.21,
+		"lhpb": 0.42,
+		"lbdmb": 0.42,
+		"lbbl": 0.71,
+		"lb_wlb": 1.0,
+		"fbv": 0.53,
+		"_20hpb": 0.67,
+		"_20sfbl": 0.84,
+		"_20_count":5,
+		"zq": 2,
+		"hot_block":["华为概念","半导体","装修家居"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"坚持一件事做一万遍 练习龙pk 对比强度 明日还是空仓休息就好 看我乐打高度",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 2,
+			"cause":"连板红盘个数>=5个",
+			"target":"我乐 龙pk",
+			"info":"名牌龙：我乐 格局吧有机会还是龙pk"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.75,
+			"dmb":0.00
+		}
+	}
+}
