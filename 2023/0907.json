@@ -1,0 +1,100 @@
+{
+	"previous_date": "20230906",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [{
+				"name": "华映科技",
+				"is20": 0,
+				"endPrice": 2.90,
+				"min": 2.70,
+				"start": 2.88,
+				"level": 4,
+				"desc": "华为+面板"
+			},
+			{
+				"name": "张江高科",
+				"is20": 0,
+				"endPrice": 19.62,
+				"min": 18.52,
+				"start": 19.19,
+				"level": 2,
+				"desc": "光刻胶+房地产"
+			},
+			{
+				"name": "冠石科技",
+				"is20": 0,
+				"endPrice": 50.66,
+				"min": 50.66,
+				"start": 50.66,
+				"level": 2,
+				"desc": "半导体"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [{
+			"do": 1,
+			"name": "我乐家居",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 16.8,
+			"sellPrice": 0,
+			"value": 400
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 3,
+		"sbs": 117,
+		"min_five": 100,
+		"hpb": 0.31,
+		"kq": 5.2,
+		"shpb": 0.47,
+		"sbdmb": 0.21,
+		"lhpb": 0.42,
+		"lbdmb": 0.42,
+		"lbbl": 0.71,
+		"lb_wlb": 1.0,
+		"fbv": 0.53,
+		"_20hpb": 0.67,
+		"_20sfbl": 0.84,
+		"_20_count":5,
+		"zq": 2,
+		"hot_block":["华为概念","半导体","装修家居"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"坚持一件事做一万遍 练习龙pk 对比强度 明日还是空仓休息就好 看我乐打高度",
+		"zq": 6,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"不需要额外买入",
+			"target":"无",
+			"info":"我乐直接格局半小时 不上水就直接卖出"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "我乐家居",
+				"lastDayPrice": 16.14,
+				"endPrice": 14.52,
+				"max": 17.46,
+				"min": 14.52,
+				"start": 16.61,
+				"level": 8,
+				"desc": "半年报+家居"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.0,
+			"dmb":1.0
+		}
+	}
+}
