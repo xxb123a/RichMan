@@ -1,0 +1,120 @@
+{
+	"previous_date": "20230912",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "联合精密",
+				"is20": 0,
+				"endPrice": 32.35,
+				"min": 27.10,
+				"start": 27.10,
+				"level": 4,
+				"desc": "光刻机+芯片"
+			},
+			{
+				"name": "通化金马",
+				"is20": 0,
+				"endPrice": 10.36,
+				"min": 9.69,
+				"start": 9.69,
+				"level": 3,
+				"desc": "大麻+中药"
+			},
+			{
+				"name": "华映科技",
+				"is20": 0,
+				"endPrice": 3.52,
+				"min": 3.13,
+				"start": 3.19,
+				"level": 2,
+				"desc": "华为+OLED"
+			},
+			{
+				"name": "京华激光",
+				"is20": 0,
+				"endPrice": 19.97,
+				"min": 18.68,
+				"start": 18.80,
+				"level": 2,
+				"desc": "光刻机+激光"
+			},
+			{
+				"name": "立达信",
+				"is20": 0,
+				"endPrice": 20.15,
+				"min": 20.15,
+				"start": 20.15,
+				"level": 2,
+				"desc": "华为鸿蒙+机器人"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "通化金马",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 10.36,
+			"sellPrice": 0,
+			"value": 600
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 6,
+		"sbs": 27,
+		"min_five": 47,
+		"hpb": 0.41,
+		"kq": 1.7,
+		"shpb": 0.73,
+		"sbdmb": 0.13,
+		"lhpb": 0.62,
+		"lbdmb": 0.37,
+		"lbbl": 0.75,
+		"lb_wlb": 0.5,
+		"fbv": 0.71,
+		"_20hpb": 0.71,
+		"_20sfbl": 0.25,
+		"_20_count":2,
+		"zq": 6,
+		"hot_block":["华为概念","医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"这里看是否能够逼空出现启动行情采用龙pk",
+		"zq": 6,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"出现逼空才能确定是行情启动",
+			"target":"高鸿股份，联合精密，通化金马，粤海饲料，铭普光磁，常山药业",
+			"info":"如果确定冰点，那么是可以板上拿货得"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "粤海饲料",
+				"lastDayPrice": 10.15,
+				"endPrice": 9.50,
+				"max": 10.19,
+				"min": 9.40,
+				"start": 9.69,
+				"level": 2,
+				"desc": "股权转让+水产饲料"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.33,
+			"dmb":0.5
+		}
+	}
+}
