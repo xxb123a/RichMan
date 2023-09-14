@@ -1,0 +1,125 @@
+{
+	"previous_date": "20230913",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "联合精密",
+				"is20": 0,
+				"endPrice": 35.59,
+				"min": 32.37,
+				"start": 32.37,
+				"level": 5,
+				"desc": "光刻机+芯片"
+			},
+			{
+				"name": "通化金马",
+				"is20": 0,
+				"endPrice": 11.40,
+				"min": 10.41,
+				"start": 10.70,
+				"level": 4,
+				"desc": "大麻+中药"
+			},
+			{
+				"name": "立达信",
+				"is20": 0,
+				"endPrice": 22.17,
+				"min": 22.01,
+				"start": 22.17,
+				"level": 3,
+				"desc": "华为鸿蒙+机器人"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 26.70,
+				"min": 24.32,
+				"start": 24.50,
+				"level": 2,
+				"desc": "华为+消费电子"
+			},
+			{
+				"name": "欣贺股份",
+				"is20": 0,
+				"endPrice": 11.88,
+				"min": 11.88,
+				"start": 11.88,
+				"level": 2,
+				"desc": "两岸+抗病毒面料"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 0,
+			"name": "通化金马",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 10.36,
+			"sellPrice": 10.64,
+			"value": 600
+		},
+		{
+			"do": 1,
+			"name": "通化金马",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 11.40,
+			"sellPrice": 11.40,
+			"value": 600
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 5,
+		"sbs": 22,
+		"min_five": 93,
+		"hpb": 0.16,
+		"kq": 4.2,
+		"shpb": 0.4,
+		"sbdmb": 0.15,
+		"lhpb": 0.6,
+		"lbdmb": 0.4,
+		"lbbl": 0.83,
+		"lb_wlb": 0.67,
+		"fbv": 0.67,
+		"_20hpb": 0.0,
+		"_20sfbl": 0.1,
+		"_20_count":3,
+		"zq": 6,
+		"hot_block":["华为概念","医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"这里需要反思了，手里达个股还没有看到结果就草草了因为恐慌卖出，按模式买的就要看到结果了才卖出 因为卖错了会后悔了\n需要可以刻意练习",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"明日直接龙pk",
+			"target":"联合精密，通化金马，捷荣技术",
+			"info":"龙pk手法接入，尽量不去打捷荣"
+		},
+		{
+			"battleMode": -1,
+			"cause":"持仓的通化金马",
+			"target":"通化金马",
+			"info":"格局看到结果就好"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.5,
+			"dmb":0.0
+		}
+	}
+}
