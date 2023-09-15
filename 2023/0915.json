@@ -1,0 +1,153 @@
+{
+	"previous_date": "20230914",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "联合精密",
+				"is20": 0,
+				"endPrice": 39.15,
+				"min": 35.85,
+				"start": 35.85,
+				"level": 6,
+				"desc": "光刻机+芯片"
+			},
+			{
+				"name": "通化金马",
+				"is20": 0,
+				"endPrice": 12.54,
+				"min": 11.83,
+				"start": 11.88,
+				"level": 5,
+				"desc": "大麻+中药"
+			},
+			{
+				"name": "武汉凡谷",
+				"is20": 0,
+				"endPrice": 11.98,
+				"min": 11.76,
+				"start": 11.98,
+				"level": 2,
+				"desc": "华为+5G"
+			},
+			{
+				"name": "东方嘉盛",
+				"is20": 0,
+				"endPrice": 25.48,
+				"min": 24.26,
+				"start": 24.49,
+				"level": 2,
+				"desc": "光刻机+供应链服务"
+			},
+			{
+				"name": "泉阳泉",
+				"is20": 0,
+				"endPrice": 10.65,
+				"min": 10.02,
+				"start": 10.20,
+				"level": 2,
+				"desc": "矿泉水+白酒"
+			},
+			{
+				"name": "安泰集团",
+				"is20": 0,
+				"endPrice": 3.11,
+				"min": 2.97,
+				"start": 3.11,
+				"level": 2,
+				"desc": "焦炭+型钢"
+			},
+			{
+				"name": "龙江交通",
+				"is20": 0,
+				"endPrice": 4.48,
+				"min": 4.19,
+				"start": 4.19,
+				"level": 2,
+				"desc": "对俄贸易+高速公路"
+			},
+			{
+				"name": "冠石科技",
+				"is20": 0,
+				"endPrice": 68.12,
+				"min": 60.44,
+				"start": 62.00,
+				"level": 2,
+				"desc": "华为+光掩膜"
+			}
+
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "联合精密",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 39.15,
+			"sellPrice": 0,
+			"value": 100
+		},
+		{
+			"do": 0,
+			"name": "通化金马",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 11.40,
+			"sellPrice": 12.39,
+			"value": 600
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 5,
+		"sbs": 23,
+		"min_five": 104,
+		"hpb": 0.24,
+		"kq": 4.5,
+		"shpb": 0.5,
+		"sbdmb": 0.42,
+		"lhpb": 0.8,
+		"lbdmb": 0.2,
+		"lbbl": 1,
+		"lb_wlb": 0.5,
+		"fbv": 0.7,
+		"_20hpb": 0.3,
+		"_20sfbl": 1,
+		"_20_count":3,
+		"zq": 2,
+		"hot_block":["华为概念","医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"总结出来了龙pk 卖出方法论可以等到10点或者明确分时走弱然后卖出 \n需要可以练习",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"明日直接龙pk",
+			"target":"联合精密，通化金马",
+			"info":"无脑龙pk 如果有一方主动示弱那么可以等待反弹卖出，或者直接低吸另一个"
+		},
+		{
+			"battleMode": -1,
+			"cause":"持仓联合同学",
+			"target":"联合精密",
+			"info":"格局到10.30看结果，如果前面直接弱掉了那么可以考虑高点卖出"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.5,
+			"dmb":0.0
+		}
+	}
+}
