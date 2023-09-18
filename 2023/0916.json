@@ -1,0 +1,147 @@
+{
+	"previous_date": "20230915",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "东方嘉盛",
+				"is20": 0,
+				"endPrice": 28.03,
+				"min": 27.61,
+				"start": 28.03,
+				"level": 3,
+				"desc": "光刻机+机器人"
+			},
+			{
+				"name": "安泰集团",
+				"is20": 0,
+				"endPrice": 3.42,
+				"min": 3.10,
+				"start": 3.10,
+				"level": 3,
+				"desc": "焦炭+型钢"
+			},
+			{
+				"name": "龙江交通",
+				"is20": 0,
+				"endPrice": 4.93,
+				"min": 4.87,
+				"start": 4.88,
+				"level": 3,
+				"desc": "一带一路+对俄交易"
+			},
+			{
+				"name": "春兴精工",
+				"is20": 0,
+				"endPrice": 5.85,
+				"min": 5.16,
+				"start": 5.20,
+				"level": 2,
+				"desc": "一体化压+特斯拉"
+			},
+			{
+				"name": "美邦服饰",
+				"is20": 0,
+				"endPrice": 2.05,
+				"min": 1.83,
+				"start": 1.89,
+				"level": 2,
+				"desc": "服装家纺+零售"
+			},
+			{
+				"name": "双成药业",
+				"is20": 0,
+				"endPrice": 8.27,
+				"min": 7.81,
+				"start": 7.82,
+				"level": 2,
+				"desc": "医药"
+			},
+			{
+				"name": "福日电子",
+				"is20": 0,
+				"endPrice": 7.87,
+				"min": 7.46,
+				"start": 7.77,
+				"level": 2,
+				"desc": "消费电子+华为"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 0,
+			"name": "联合精密",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 39.15,
+			"sellPrice": 36.75,
+			"value": 100
+		},
+		{
+			"do": 1,
+			"name": "通化金马",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 13.79,
+			"sellPrice": 0.00,
+			"value": 400
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 7,
+		"sbs": 42,
+		"min_five": 56,
+		"hpb": 0.67,
+		"kq": 1.3,
+		"shpb": 0.57,
+		"sbdmb": 0.23,
+		"lhpb": 0.5,
+		"lbdmb": 0.37,
+		"lbbl": 0.87,
+		"lb_wlb": 0.8,
+		"fbv": 0.78,
+		"_20hpb": 0.67,
+		"_20sfbl": 0.6,
+		"_20_count":3,
+		"zq": 4,
+		"hot_block":["华为概念+车","医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"核心标快速核按钮，放弃龙pk",
+		"zq": 4,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"明日空仓",
+			"target":"通化金马",
+			"info":"无脑核按钮吧没意思"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+		{
+				"name": "冠石科技",
+				"lastDayPrice": 68.12,
+				"endPrice": 31.31,
+				"max": 64.83,
+				"min": 61.31,
+				"start": 64.83,
+				"level": 2,
+				"desc": "华为"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.33,
+			"dmb":0.67
+		}
+	}
+}
