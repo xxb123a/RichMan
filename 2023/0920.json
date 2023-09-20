@@ -1,0 +1,103 @@
+{
+	"previous_date": "20230919",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "金帝股份",
+				"is20": 0,
+				"endPrice": 44.45,
+				"min": 41.00,
+				"start": 41.00,
+				"level": 3,
+				"desc": "次新 + 汽配 + 风电"
+			},
+			{
+				"name": "日久广电",
+				"is20": 0,
+				"endPrice": 11.99,
+				"min": 11.52,
+				"start": 11.52,
+				"level": 2,
+				"desc": "华为概念"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "金帝股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 44.42,
+			"sellPrice": 0.0,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 4,
+		"sbs": 19,
+		"min_five": 66,
+		"hpb": 0.21,
+		"kq": 3.4,
+		"shpb": 0.4,
+		"sbdmb": 0.09,
+		"lhpb": 0.28,
+		"lbdmb": 0.57,
+		"lbbl": 0.57,
+		"lb_wlb": 0.83,
+		"fbv": 0.66,
+		"_20hpb": 0.67,
+		"_20sfbl": 0.0,
+		"_20_count":0,
+		"zq": 6,
+		"hot_block":["华为概念+车","医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"我觉得还是可以到试错到阶段了，还是龙pk 除非连板出现超级大的负反馈比如 pk标直接地板开",
+		"zq": 6,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"连板无巨大负反馈",
+			"target":"日久光电/金帝股份/捷荣技术",
+			"info":"明天不出现巨大负反馈的话还是可以龙pk的"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "龙江交通",
+				"lastDayPrice": 5.42,
+				"endPrice": 4.88,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "一带一路+对俄贸易"
+			},
+			{
+				"name": "哈空调",
+				"lastDayPrice": 7.50,
+				"endPrice": 6.75,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "一带一路+对俄贸易"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.16,
+			"dmb":0.83
+		}
+	}
+}
