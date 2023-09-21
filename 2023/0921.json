@@ -1,0 +1,102 @@
+{
+	"previous_date": "20230920",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "日久光电",
+				"is20": 0,
+				"endPrice": 13.19,
+				"min": 11.51,
+				"start": 12.60,
+				"level": 3,
+				"desc": "华为概念"
+			},
+			{
+				"name": "罗普斯金",
+				"is20": 0,
+				"endPrice": 8.21,
+				"min": 7.58,
+				"start": 7.86,
+				"level": 2,
+				"desc": "光伏"
+			},
+			{
+				"name": "精伦电子",
+				"is20": 0,
+				"endPrice": 4.26,
+				"min": 4.09,
+				"start": 4.26,
+				"level": 2,
+				"desc": "华为概念+机器人概念"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+			{
+				"do": 0,
+				"name": "金帝股份",
+				"mode": 1,
+				"isModeI": true,
+				"buyPrice": 44.42,
+				"sellPrice": 44.95,
+				"value": 100
+			},
+			{
+				"do": 1,
+				"name": "捷荣技术",
+				"mode": 0,
+				"isModeI": false,
+				"buyPrice": 31.31,
+				"sellPrice": 0,
+				"value": 100
+			}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 4,
+		"sbs": 17,
+		"min_five": 43,
+		"hpb": 0.2,
+		"kq": 2.5,
+		"shpb": 0.35,
+		"sbdmb": 0.21,
+		"lhpb": 0.5,
+		"lbdmb": 0.5,
+		"lbbl": 2,
+		"lb_wlb": 1,
+		"fbv": 0.74,
+		"_20hpb": 0.5,
+		"_20sfbl": 0.5,
+		"_20_count":1,
+		"zq": 2,
+		"hot_block":["华为概念+车"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"明日看情绪确定是否是主升，如果是主升 那么就是龙pk干龙头，主要看日久",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"看捷荣+日久的反馈",
+			"target":"日久光电/",
+			"info":"加油，注意观察情绪，不好的话就不操作。捷荣同学是大妖股"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.0,
+			"dmb":1.0
+		}
+	}
+}
