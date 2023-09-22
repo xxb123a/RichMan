@@ -1,0 +1,129 @@
+{
+	"previous_date": "20230921",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "精伦电子",
+				"is20": 0,
+				"endPrice": 4.69,
+				"min": 4.39,
+				"start": 4.5,
+				"level": 3,
+				"desc": "华为概念+机器人概念"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 35.94,
+				"min": 33.00,
+				"start": 33.98,
+				"level": 3,
+				"desc": "华为+消费电子"
+			},
+			{
+				"name": "三联锻造",
+				"is20": 0,
+				"endPrice": 37.03,
+				"min": 37.02,
+				"start": 37.02,
+				"level": 2,
+				"desc": "华为汽车+比亚迪仰望"
+			},
+			{
+				"name": "丰华股份",
+				"is20": 0,
+				"endPrice": 11.13,
+				"min": 10.54,
+				"start": 10.69,
+				"level": 2,
+				"desc": "镁铝合金+华为汽车"
+			},
+			{
+				"name": "华脉科技",
+				"is20": 0,
+				"endPrice": 18.11,
+				"min": 16.56,
+				"start": 16.78,
+				"level": 2,
+				"desc": "5G+数据中心"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+			{
+				"do": 0,
+				"name": "捷荣技术",
+				"mode": 0,
+				"isModeI": false,
+				"buyPrice": 31.31,
+				"sellPrice": 34.34,
+				"value": 100
+			},
+			{
+				"do": 1,
+				"name": "日久光电",
+				"mode": 1,
+				"isModeI": true,
+				"buyPrice": 14.51,
+				"sellPrice": ,
+				"value": 400
+			}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 5,
+		"sbs": 31,
+		"min_five": 16,
+		"hpb": 0.88,
+		"kq": 0.5,
+		"shpb": 0.5,
+		"sbdmb": 0.25,
+		"lhpb": 0.75,
+		"lbdmb": 0.25,
+		"lbbl": 1.25,
+		"lb_wlb": 0.5,
+		"fbv": 0.76,
+		"_20hpb": 1,
+		"_20sfbl": 0.67,
+		"_20_count":5,
+		"zq": 2,
+		"hot_block":["华为概念+车"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"主升确定，猛干龙pk就好了 确定主升 那么日久还是多格局以下吧，有冲高机会可以出不然可以多等等",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"龙pk标，捷荣同学可以采用龙低吸",
+			"target":"精伦电子/三联锻造/丰华股份/华脉科技",
+			"info":"没有特大负反馈那么就主升，龙pk 持仓多格局。捷荣同学是大妖股"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "罗普斯金",
+				"lastDayPrice": 7.39,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "光伏"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.0,
+			"dmb":1
+		}
+	}
+}
