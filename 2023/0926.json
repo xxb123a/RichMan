@@ -1,0 +1,176 @@
+{
+	"previous_date": "20230925",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "精伦电子",
+				"is20": 0,
+				"endPrice": 5.68,
+				"min": 5.68,
+				"start": 5.68,
+				"level": 5,
+				"desc": "华为概念+新型工业化"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 43.48,
+				"min": 40.38,
+				"start": 41.50,
+				"level": 5,
+				"desc": "华为+消费电子"
+			},
+			{
+				"name": "三联锻造",
+				"is20": 0,
+				"endPrice": 44.80,
+				"min": 39.59,
+				"start": 42.0,
+				"level": 4,
+				"desc": "华为汽车+比亚迪仰望"
+			},
+			{
+				"name": "华脉科技",
+				"is20": 0,
+				"endPrice": 21.91,
+				"min": 19.00,
+				"start": 19.48,
+				"level": 4,
+				"desc": "5G+数据中心"
+			},
+			{
+				"name": "翠微股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "数字货币+移动支付"
+			},
+			{
+				"name": "远东传动",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "工业互联网"
+			},
+			{
+				"name": "亚威股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "工业母机+华为+光刻胶"
+			},
+			{
+				"name": "翼凯股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "矿山装备+3D打印"
+			},
+			{
+				"name": "德恩精工",
+				"is20": 1,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "新型工业化+工业母机"
+			},
+			{
+				"name": "天永智能",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "工业4.0+新能源汽车"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+			
+			{
+				"do": 0,
+				"name": "华脉科技",
+				"mode": 0,
+				"isModeI": false,
+				"buyPrice": 19.87,
+				"sellPrice": 19.09,
+				"value": 300
+			}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 10,
+		"sbs": 33,
+		"min_five": 56,
+		"hpb": 0.29,
+		"kq": 1.6,
+		"shpb": 0.5,
+		"sbdmb": 0.21,
+		"lhpb": 0.63,
+		"lbdmb": 0.27,
+		"lbbl": 0.9,
+		"lb_wlb": 0.67,
+		"fbv": 0.83,
+		"_20hpb": 1,
+		"_20sfbl": 0.75,
+		"_20_count":4,
+		"zq": 2,
+		"hot_block":["华为概念+新型工业化"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 2,
+			"cause":"龙低吸",
+			"target":"精伦电子/捷荣",
+			"info":"有机会就低吸哟"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "高斯贝尔",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "5G+华为"
+			},
+			{
+				"name": "丰华股份",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.0,
+			"dmb":0
+		}
+	}
+}
