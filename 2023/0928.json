@@ -1,0 +1,169 @@
+{
+	"previous_date": "20230927",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "精伦电子",
+				"is20": 0,
+				"endPrice": 6.88,
+				"min": 6.88,
+				"start": 6.88,
+				"level": 7,
+				"desc": "华为概念+新型工业化"
+			},
+			{
+				"name": "华映科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为+显示面板"
+			},
+			{
+				"name": "好上好",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "次新+消费电子"
+			},
+			{
+				"name": "林州重机",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "煤矿机械+机器人"
+			},
+			{
+				"name": "贝肯能源",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "一带一路+油气开采"
+			},
+			{
+				"name": "卓朗智能",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "工业4.0+智能制造"
+			},
+			{
+				"name": "荣联科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为星闪+信创"
+			},
+			{
+				"name": "恒为科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "新型工业化"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+			
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 8,
+		"sbs": 40,
+		"min_five": 30,
+		"hpb": 0.74,
+		"kq": 0.75,
+		"shpb": 0.52,
+		"sbdmb": 0.23,
+		"lhpb": 0.75,
+		"lbdmb": 0.33,
+		"lbbl": 0.75,
+		"lb_wlb": 0.5,
+		"fbv": 0.77,
+		"_20hpb": 0.4,
+		"_20sfbl": 57,
+		"_20_count":4,
+		"zq": 2,
+		"hot_block":["华为概念+新型工业化"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 2,
+			"cause":"龙低吸",
+			"target":"精伦电子",
+			"info":"有机会就干，反正就盯着这个 周期末端要来了 亏钱效应要释放了"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "德恩精工",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "新型工业化"
+			},
+			{
+				"name": "远东传动",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "新型工业化"
+			},
+			{
+				"name": "翼凯股份",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "3D打印"
+			},
+			{
+				"name": "南方路机",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "机器人+工业搅拌设备"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.25,
+			"dmb":0.75
+		}
+	}
+}
