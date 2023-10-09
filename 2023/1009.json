@@ -1,0 +1,253 @@
+{
+	"previous_date": "20230928",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "精伦电子",
+				"is20": 0,
+				"endPrice": 7.57,
+				"min": 0,
+				"start": 0,
+				"level": 8,
+				"desc": "华为概念+新型工业化"
+			},
+			{
+				"name": "华映科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "华为+显示面板"
+			},
+			{
+				"name": "好上好",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "次新+消费电子"
+			},
+			{
+				"name": "贝肯能源",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "一带一路+油气开采"
+			},
+			{
+				"name": "荣联科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为星闪+信创"
+			},
+			{
+				"name": "恒为科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "新型工业化"
+			},
+			{
+				"name": "卓翼科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为概念+智能音响"
+			},
+			{
+				"name": "欧菲光",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为概念+消费电子"
+			},
+			{
+				"name": "达华智能",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为概念+人工智能"
+			},
+			{
+				"name": "格林精密",
+				"is20": 1,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为概念+工业4.0"
+			},
+			{
+				"name": "恒勃股份",
+				"is20": 1,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "莲花健康",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "算力+网红经济"
+			},
+			{
+				"name": "塞力斯",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车"
+			},
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "日盈电子",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "汽车清洗系统+工业互联网"
+			},
+			{
+				"name": "松饧资源",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "环保"
+			},
+			{
+				"name": "冠石科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+光膜"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+			{
+			"do": 1,
+			"name": "精伦电子",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 7.00,
+			"sellPrice": 0.00,
+			"value": 700
+		},
+		{
+			"do": 1,
+			"name": "捷荣技术",
+			"mode": 0,
+			"isModeI": false,
+			"buyPrice": 47.46,
+			"sellPrice": 0.00,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 17,
+		"sbs": 55,
+		"min_five": 122,
+		"hpb": 0.32,
+		"kq": 2.2,
+		"shpb": 0.75,
+		"sbdmb": 0.1,
+		"lhpb": 0.75,
+		"lbdmb": 0.25,
+		"lbbl": 2.1,
+		"lb_wlb": 1,
+		"fbv": 0.82,
+		"_20hpb": 1,
+		"_20sfbl": 0.83,
+		"_20_count":11,
+		"zq": 5,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局",
+		"zq": 5,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"持仓处理",
+			"target":"精伦电子",
+			"info":"按妖股卖股论卖出就好了"
+		},
+		{
+			"battleMode": -1,
+			"cause":"持仓处理",
+			"target":"捷荣技术",
+			"info":"尽量格局找高点兑现"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "卓朗智能",
+				"lastDayPrice": 0,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "工业4.0+智能制造"
+			},
+			{
+				"name": "林州重机",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "机器人+煤矿机械"
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.28,
+			"dmb":0.28
+		}
+	}
+}
