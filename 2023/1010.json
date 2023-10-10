@@ -1,0 +1,220 @@
+{
+	"previous_date": "20231009",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "好上好",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 5,
+				"desc": "次新+消费电子"
+			},
+			{
+				"name": "贝肯能源",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 5,
+				"desc": "一带一路+油气开采"
+			},
+			{
+				"name": "欧菲光",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为概念+消费电子"
+			},
+			{
+				"name": "达华智能",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为概念+人工智能"
+			},
+			{
+				"name": "莲花健康",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "算力+网红经济"
+			},
+			{
+				"name": "塞力斯",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为汽车"
+			},
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "冠石科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为+光膜"
+			},
+			{
+				"name": "宝馨科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为超充+充电桩"
+			},
+			{
+				"name": "真视通",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+算力"
+			},
+			{
+				"name": "永贵电器",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为超充+充电桩"
+			},
+			{
+				"name": "宏达股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "化工"
+			},
+			{
+				"name": "上海沿浦",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "沪光股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车+汽车线束"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+			{
+			"do": 0,
+			"name": "精伦电子",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 7.00,
+			"sellPrice": 6.99,
+			"value": 700
+		},
+		{
+			"do": 0,
+			"name": "捷荣技术",
+			"mode": 0,
+			"isModeI": false,
+			"buyPrice": 47.46,
+			"sellPrice": 46.5,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 14,
+		"sbs": 45,
+		"min_five": 76,
+		"hpb": 0.37,
+		"kq": 1.68,
+		"shpb": 0.68,
+		"sbdmb": 0.1,
+		"lhpb": 0.6,
+		"lbdmb": 0.4,
+		"lbbl": 0.82,
+		"lb_wlb": 0.85,
+		"fbv": 0.8,
+		"_20hpb": 0.5,
+		"_20sfbl": 1,
+		"_20_count":7,
+		"zq": 6,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局",
+		"zq": 6,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"注意周期开始衰退无论如何都不要出手可以休息了等待新机会得出现",
+			"target":"无",
+			"info":"注意空仓休息两天等待新周期的到来"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "日盈电子",
+				"lastDayPrice": 0,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": ""
+			},
+			{
+				"name": "精伦电子",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 8,
+				"desc": ""
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.5,
+			"dmb":0.0
+		}
+	}
+}
