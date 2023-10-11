@@ -1,0 +1,157 @@
+{
+	"previous_date": "20231010",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "欧菲光",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "华为概念+消费电子"
+			},
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "宝馨科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为超充+充电桩"
+			},
+			{
+				"name": "常山北明",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+国资云"
+			},
+			{
+				"name": "盛通股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "鸿蒙+机器人"
+			},
+			{
+				"name": "恒铭达",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "消费电子+华为"
+			},
+			{
+				"name": "润达医疗",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+AI医疗"
+			},
+			{
+				"name": "龙版传媒",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "一带一路+在线教育"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 0,
+			"name": "冠石科技",
+			"mode": 0,
+			"isModeI": false,
+			"buyPrice": 82.01,
+			"sellPrice": 0,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 8,
+		"sbs": 37,
+		"min_five": 46,
+		"hpb": 0.49,
+		"kq": 1.2,
+		"shpb": 0.38,
+		"sbdmb": 0.31,
+		"lhpb": 0.38,
+		"lbdmb": 0.53,
+		"lbbl": 0.57,
+		"lb_wlb": 0.8,
+		"fbv": 0.64,
+		"_20hpb": 0.2,
+		"_20sfbl": 0.37,
+		"_20_count":3,
+		"zq": 6,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局",
+		"zq": 6,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"周期衰退第二天，空仓等待昨日得手痒亏了12个点。",
+			"target":"无",
+			"info":"注意空仓休息两天等待新周期的到来"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			{
+				"name": "贝肯能源",
+				"lastDayPrice": 0,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": ""
+			},
+			{
+				"name": "真视通",
+				"lastDayPrice": 7.08,
+				"endPrice": 0,
+				"max": 0,
+				"min": 0,
+				"start": 0,
+				"level": 8,
+				"desc": ""
+			}
+		],
+		"last_result":{
+			"desc":"昨日断板今日情况",
+			"hpb":0.33,
+			"dmb":0.55
+		}
+	}
+}
