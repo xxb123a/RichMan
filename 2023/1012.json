@@ -1,0 +1,127 @@
+{
+	"previous_date": "20231011",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "欧菲光",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 5,
+				"desc": "华为概念+消费电子"
+			},
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 5,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "恒铭达",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "消费电子+华为"
+			},
+			{
+				"name": "百花医药",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "医药+减肥药"
+			},
+			{
+				"name": "扬子新材",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "医疗器械"
+			},
+			{
+				"name": "莎普爱思",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "医药+眼科"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 0,
+			"name": "冠石科技",
+			"mode": 0,
+			"isModeI": false,
+			"buyPrice": 82.01,
+			"sellPrice": 65.33,
+			"value": 100
+		},
+		{
+			"do": 1,
+			"name": "东亚药业",
+			"mode": 0,
+			"isModeI": false,
+			"buyPrice": 34.89,
+			"sellPrice": 0,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 6,
+		"sbs": 28,
+		"min_five": 33,
+		"hpb": 0.64,
+		"kq": 1.17,
+		"shpb": 0.53,
+		"sbdmb": 0.19,
+		"lhpb": 0.5,
+		"lbdmb": 0.37,
+		"lbbl": 0.75,
+		"lb_wlb": 0.6,
+		"fbv": 0.57,
+		"_20hpb": 0.67,
+		"_20sfbl": 0.5,
+		"_20_count":3,
+		"zq": 1,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局 \n 严格要求自己真的只要最好，不然亏损就是10多cm 特别退潮管住手",
+		"zq": 1,
+		"strategy":[
+		{
+			"battleMode": 1,
+			"cause":"龙pk 模式直接干干干干",
+			"target":"无",
+			"info":"龙pk 从强到弱百花（减肥药）莎普爱思（滴眼液）扬子新材（医疗器械）恒铭达（华为概念+消费电子）圣龙股份（华为汽车+汽配）欧菲光（华为概念+消费电子）"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			
+		}
+	}
+}
