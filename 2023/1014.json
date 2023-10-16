@@ -1,0 +1,163 @@
+{
+	"previous_date": "20231013",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 7,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "百花医药",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "医药+减肥药"
+			},
+			{
+				"name": "莎普爱思",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "医药+眼科"
+			},
+			{
+				"name": "光洋股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为汽车+消费电子"
+			},
+			{
+				"name": "东旭光电",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "新能源车+消费电子+华为"
+			},
+			{
+				"name": "维信诺",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+消费电子+汽车电子"
+			},
+			{
+				"name": "高争民爆",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "民爆+西藏企业"
+			},
+			{
+				"name": "华正新材",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "5.5G+先进封装"
+			},
+			{
+				"name": "天龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "龙字辈+汽车热管理"
+			},
+			{
+				"name": "白云电器",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+智能电网"
+			},
+			{
+				"name": "龙版传媒",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "三季报+知识产权+在线教育"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 21.38,
+			"sellPrice": 0,
+			"value": 200
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 11,
+		"sbs": 54,
+		"min_five": 113,
+		"hpb": 0.29,
+		"kq": 2.01,
+		"shpb": 0.81,
+		"sbdmb": 0.13,
+		"lhpb": 0.75,
+		"lbdmb": 0.25,
+		"lbbl": 1.3,
+		"lb_wlb": 0.25,
+		"fbv": 0.82,
+		"_20hpb": 0.67,
+		"_20sfbl": 1,
+		"_20_count":5,
+		"zq": 2,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略: 龙pk 只要最高板，次高板，如果找不出就休息 不然就亏钱",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局 \n 严格要求自己真的只要最好，不然亏损就是10多cm 特别退潮管住手",
+		"zq": 2,
+		"strategy":[
+		{
+			"battleMode": 2,
+			"cause":"龙低吸 模式直接干干干干",
+			"target":"圣龙股份（秒板）",
+			"info":"圣龙今天符合预期，明日尽量不开仓 符合龙低吸也是可以买的。"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			
+		}
+	}
+}
