@@ -1,0 +1,136 @@
+{
+	"previous_date": "20231016",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 8,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "莎普爱思",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 5,
+				"desc": "医药+眼科"
+			},
+			{
+				"name": "中科金财",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "算力租赁+互联网金融"
+			},
+			{
+				"name": "真视通",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "算力租赁+华为"
+			},
+			{
+				"name": "恒通股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "油运+港口物流"
+			},
+			{
+				"name": "和顺石油",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "石油石化"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 21.16,
+			"sellPrice": 0,
+			"value": 100
+		},
+		{
+			"do": 0,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 19.44,
+			"sellPrice": 21.91,
+			"value": 300
+		},
+		{
+			"do": 0,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 21.38,
+			"sellPrice": 23.52,
+			"value": 200
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 6,
+		"sbs": 28,
+		"min_five": 102,
+		"hpb": 0.43,
+		"kq": 3.6,
+		"shpb": 0.53,
+		"sbdmb": 0.14,
+		"lhpb": 0.27,
+		"lbdmb": 0.54,
+		"lbbl": 0.54,
+		"lb_wlb": 0.88,
+		"fbv": 0.61,
+		"_20hpb": 1,
+		"_20sfbl": 0.6,
+		"_20_count":3,
+		"zq": 4,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略: 龙pk 只要最高板，次高板，如果找不出就休息 不然就亏钱",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局 \n 严格要求自己真的只要最好，不然亏损就是10多cm 特别退潮管住手",
+		"zq": 5,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"周期进入尾声，今日可能进入龙死亡期可以格局 但是不加仓了",
+			"target":"圣龙股份",
+			"info":"格局手里得，最后不封板就走"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			
+		}
+	}
+}
