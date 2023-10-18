@@ -1,0 +1,154 @@
+{
+	"previous_date": "20231017",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 9,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "真视通",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "算力租赁+华为"
+			},
+			{
+				"name": "和顺石油",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "石油石化"
+			},
+			{
+				"name": "好上好",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "芯片+消费电子"
+			},
+			{
+				"name": "亚联发展",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "移动支付+华为概念"
+			},
+			{
+				"name": "华峰超纤",
+				"is20": 1,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "移动支付+华为概念"
+			},
+			{
+				"name": "瑞贝卡",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华鲲振宇概念+算力租赁"
+			},
+			{
+				"name": "文一科技",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "芯片"
+			},
+			{
+				"name": "上海沪工",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "卫星导航"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "欧菲光",
+			"mode": 0,
+			"isModeI": false,
+			"buyPrice": 11.55,
+			"sellPrice": 0,
+			"value": 200
+		},
+		{
+			"do": 0,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 21.16,
+			"sellPrice": 24.87,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 9,
+		"sbs": 37,
+		"min_five": 120,
+		"hpb": 0.09,
+		"kq": 3.2,
+		"shpb": 0.68,
+		"sbdmb": 0.0,
+		"lhpb": 0.5,
+		"lbdmb": 0.33,
+		"lbbl": 1.5,
+		"lb_wlb": 1,
+		"fbv": 0.82,
+		"_20hpb": 0.5,
+		"_20sfbl": 0.67,
+		"_20_count":5,
+		"zq": 4,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略: 龙pk 只要最高板，次高板，如果找不出就休息 不然就亏钱",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局 \n 严格要求自己真的只要最好，不然亏损就是10多cm 特别退潮管住手",
+		"zq": 5,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"周期进入尾声，圣龙走妖，如果能给到博弈低点倒是可以小仓位参与如果加速就不用看了 ",
+			"target":"圣龙股份",
+			"info":"要严格执行纪律啊，自己卖股是真的很差基本没按照卖股论。 导致乱买一个欧菲光吃面。。。"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			
+		}
+	}
+}
