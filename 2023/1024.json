@@ -1,0 +1,154 @@
+{
+	"previous_date": "20231023",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 13,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "真视通",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 7,
+				"desc": "算力租赁+华为"
+			},
+			{
+				"name": "高新发展",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "华鲲振宇+并购重组"
+			},
+			{
+				"name": "顺发恒业",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "三季报+房地产"
+			},
+			{
+				"name": "龙洲股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "汽配+卫星导航"
+			},
+			{
+				"name": "三维通信",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+5G"
+			},
+			{
+				"name": "云南城投",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "房地产"
+			},
+			{
+				"name": "元成股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "半导体+风电"
+			},
+			{
+				"name": "常青股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "新能源车+一体化压铸"
+			},
+			{
+				"name": "恒润股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "算力+风电"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 36.34,
+			"sellPrice": 0,
+			"value": 200
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 10,
+		"sbs": 63,
+		"min_five": 36,
+		"hpb": 0.89,
+		"kq": 0.57,
+		"shpb": 0.57,
+		"sbdmb": 0.15,
+		"lhpb": 0.75,
+		"lbdmb": 0.37,
+		"lbbl": 1.2,
+		"lb_wlb": 0.67,
+		"fbv": 0.77,
+		"_20hpb": 0.5,
+		"_20sfbl": 0.75,
+		"_20_count":6,
+		"zq": 4,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略: 龙pk 只要最高板，次高板，如果找不出就休息 不然就亏钱",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局 \n 严格要求自己真的只要最好，不然亏损就是10多cm 特别退潮管住手",
+		"zq": 5,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"符合模式还是怼圣龙 这里只看圣龙",
+			"target":"圣龙股份",
+			"info":"有低吸机会还是要无脑低吸啊控制仓位就好\n要严格执行纪律啊，自己卖股是真的很差基本没按照卖股论。 导致乱买一个欧菲光吃面。。。"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			
+		}
+	}
+}
