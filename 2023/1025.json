@@ -1,0 +1,217 @@
+{
+	"previous_date": "20231024",
+	"limit_down": {
+		"desc": "涨停板",
+		"array": [
+			{
+				"name": "圣龙股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 14,
+				"desc": "华为汽车+汽配"
+			},
+			{
+				"name": "真视通",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 8,
+				"desc": "算力租赁+华为"
+			},
+			{
+				"name": "高新发展",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 5,
+				"desc": "华鲲振宇+并购重组"
+			},
+			{
+				"name": "顺发恒业",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "三季报+房地产"
+			},
+			{
+				"name": "龙洲股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 4,
+				"desc": "汽配+卫星导航"
+			},
+			{
+				"name": "三维通信",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "华为+5G"
+			},
+			{
+				"name": "云南城投",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "房地产"
+			},
+			{
+				"name": "常青股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "新能源车+一体化压铸"
+			},
+			{
+				"name": "恒润股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 3,
+				"desc": "算力+风电"
+			},
+			{
+				"name": "学大教育",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "职业教育+体育"
+			},
+			{
+				"name": "坤泰股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "次新+汽车地毯"
+			},
+			{
+				"name": "捷荣技术",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为+消费电子"
+			},
+			{
+				"name": "顺控发展",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "万亿国资+三季度"
+			},
+			{
+				"name": "黑牡丹",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "三季报+牛仔布"
+			},
+			{
+				"name": "富佳股份",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "小家电+PCB"
+			},
+			{
+				"name": "中贝通信",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "算力+超聚变"
+			},
+			{
+				"name": "宁波高发",
+				"is20": 0,
+				"endPrice": 0,
+				"min": 0,
+				"start": 0,
+				"level": 2,
+				"desc": "华为汽车+汽车变速"
+			}
+		]
+	},
+	"user_action": {
+		"desc": "用户得操作",
+		"action": [
+		{
+			"do": 1,
+			"name": "圣龙股份",
+			"mode": 1,
+			"isModeI": true,
+			"buyPrice": 39.7,
+			"sellPrice": 0,
+			"value": 100
+		}
+		]
+	},
+	"emotional_cycle": {
+		"desc": "情绪周期",
+		"lbs": 17,
+		"sbs": 64,
+		"min_five": 51,
+		"hpb": 0.77,
+		"kq": 0.79,
+		"shpb": 0.82,
+		"sbdmb": 0.17,
+		"lhpb": 1,
+		"lbdmb": 0,
+		"lbbl": 1.7,
+		"lb_wlb": 0,
+		"fbv": 0.74,
+		"_20hpb": 0.67,
+		"_20sfbl": 0.88,
+		"_20_count":8,
+		"zq": 3,
+		"hot_block":["华为概念+医药"]
+	},
+	"next_action": {
+		"desc": "下一个交易日策略: 龙pk 只要最高板，次高板，如果找不出就休息 不然就亏钱",
+		"summarize":"需要自己改正的地方：\n 1.模式内断板个股除非是名牌龙头可以格局一会，其余的直接核按钮。\n2.模式内个股一定要多看看等待10点左右卖出，或者直接去深水也要等反弹无力才出局 \n 严格要求自己真的只要最好，不然亏损就是10多cm 特别退潮管住手",
+		"zq": 4,
+		"strategy":[
+		{
+			"battleMode": -1,
+			"cause":"符合模式还是怼圣龙 这里只看圣龙",
+			"target":"圣龙股份",
+			"info":"妖股卖股论"
+		}
+		]
+	},
+	"boom":{
+		"desc":"断板大面个股",
+		"data":[
+			
+		],
+		"last_result":{
+			
+		}
+	}
+}
