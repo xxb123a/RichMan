@@ -35,29 +35,28 @@ import javax.net.ssl.*
  * date        : 2023/8/28 17:21
  * description :
  */
-object DataApi {
+object DataApi2 {
     //base host
-    const val base_host = "https://raw.githubusercontent.com/xxb123a/RichMan/main"
-    const val zfJson = "/zf.json"
+    const val base_host = "https://raw.githubusercontent.com/xxb123a/RichMan/app"
+    const val splash = "api/hxsx.json"
 
     private fun getHolidayName(year:Int):String{
         return "$base_host/Holidays/$year.json"
     }
 
     private fun createDataName(time: Long): String {
-        val calendar = Calendar.getInstance()
-        val sdf = SimpleDateFormat("MMdd", Locale.getDefault())
-        return "/${calendar.get(Calendar.YEAR)}/${sdf.format(time)}.json"
+        val sdf = SimpleDateFormat("yyyyMMdd", Locale.getDefault())
+        return "/record/${sdf.format(time)}.json"
     }
 
-    fun getZfContent(isReload: Boolean = false): String {
+    fun getCoreThink(isReload: Boolean = false): String {
         if (!isReload) {
             val cacheContent = readStringByFile(getZfCachePath())
             if (cacheContent.isNotEmpty()) {
                 return cacheContent
             }
         }
-        val content = getUrlContent(base_host + zfJson, createCommonOkHttp())
+        val content = getUrlContent(base_host + splash, createCommonOkHttp())
         if (content.isNotEmpty() && content.trim().startsWith("{")) {
             save2File(content, getZfCachePath())
         }
@@ -85,18 +84,6 @@ object DataApi {
     fun hasDownloadDayContent(time:Long):Boolean{
         val cacheContent = readStringByFile(getDataPath(time))
         return cacheContent.isNotEmpty()
-    }
-
-    fun getHolidayContent(year:Int):String{
-        val cacheContent = readStringByFile(getHolidayPath(year))
-        if (cacheContent.isNotEmpty()) {
-            return cacheContent
-        }
-        val content = getUrlContent(getHolidayName(year), createCommonOkHttp())
-        if (content.isNotEmpty() && content.trim().startsWith("{")) {
-            save2File(content, getHolidayPath(year))
-        }
-        return content
     }
 
     private fun getUrlContent(url: String, okClient: OkHttpClient): String {

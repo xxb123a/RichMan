@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.R
-import com.xb.selfrichapp.http.DataApi
 import com.xb.selfrichapp.manager.WorkModeManager
 import com.xb.selfrichapp.prefs.Prefs
 import com.xb.selfrichapp.tool.ToastTools
