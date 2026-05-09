@@ -1,0 +1,25 @@
+[versions]
+agp = "9.0.1"
+coreKtx = "1.18.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+room = "2.7.2"
+ksp = "2.3.4"
+glide = "4.16.0"
+exo = "2.19.1"
+rxjava = "3.1.5"
+rxandroid = "3.0.2"
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+room-runtime = { group = "androidx.room", name = "room-runtime",version.ref = "room"}
+room-compiler = { group = "androidx.room", name = "room-compiler",version.ref = "room"}
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide"}
+player-exo = { group = "com.google.android.exoplayer", name = "exoplayer", version.ref = "exo"}
+rx-java = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxjava" }
+rx-android = { group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxandroid" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

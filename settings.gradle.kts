@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "SelfRichApp"
-include ':app'
+include(":app")
