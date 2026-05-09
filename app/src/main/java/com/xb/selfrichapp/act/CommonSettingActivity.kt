@@ -6,6 +6,7 @@ import android.view.View
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.R
+import com.xb.selfrichapp.transparencyBar
 
 /**
  *_    .--,       .--,
@@ -33,6 +34,7 @@ class CommonSettingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        transparencyBar()
         setContentView(R.layout.activity_common_set)
         commonClick(R.id.btn_zf_list) {
             ZfShowActivity.launch(this)

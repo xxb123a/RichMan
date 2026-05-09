@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main_content"
     tools:context=".MainActivity">
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
-
+        android:layout_height="88dp"
+        android:background="#000000"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="44dp"
+            >
+            <TextView
+                android:id="@+id/data_set"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="设置"
+                />
+            <TextView
+                android:id="@+id/core_think"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="核心思想"
+                />
+            <TextView
+                android:id="@+id/data_think"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="数据分析"
+                />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="88dp"
+        >
         <TextView
             android:id="@+id/tv_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
+            android:padding="16dp"
             android:textSize="16sp" />
-    </LinearLayout>
+    </ScrollView>
 
-</ScrollView>
+</FrameLayout>

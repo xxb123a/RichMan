@@ -14,6 +14,7 @@ import com.xb.selfrichapp.http.DataApi2
 import com.xb.selfrichapp.manager.WorkModeManager
 import com.xb.selfrichapp.prefs.Prefs
 import com.xb.selfrichapp.tool.ToastTools
+import com.xb.selfrichapp.transparencyBar
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -47,6 +48,7 @@ class DaySettingActivity : AppCompatActivity() {
     private val mBtnDay by lazy { findViewById<TextView>(R.id.btn_day_get) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        transparencyBar()
         setContentView(R.layout.activity_day_set)
         commonClick(R.id.btn_modify_show_time) {
             showDatePicker{

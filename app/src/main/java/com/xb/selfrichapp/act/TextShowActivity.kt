@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.R
 import com.xb.selfrichapp.tool.ToastTools
+import com.xb.selfrichapp.transparencyBar
 
 /**
  *_    .--,       .--,
@@ -44,6 +45,7 @@ class TextShowActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        transparencyBar()
         closeEnable = !delayClose
         setContentView(R.layout.activity_text_show)
         mTitleTv.text = mTitle

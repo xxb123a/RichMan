@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.R
 import com.xb.selfrichapp.db.StockRecordEntity
 import com.xb.selfrichapp.db.fetchStockDao
+import com.xb.selfrichapp.transparencyBar
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -45,6 +46,7 @@ class DataThinkActivity : AppCompatActivity() {
     private val contentUI by lazy { findViewById<TextView>(R.id.txt_content) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        transparencyBar()
         setContentView(R.layout.activity_data_think)
         val calendar = Calendar.getInstance()
         endTime = calendar.timeInMillis
