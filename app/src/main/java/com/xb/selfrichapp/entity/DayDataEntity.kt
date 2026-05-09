@@ -101,20 +101,26 @@ class DayDataEntity {
     fun toShowText(): String{
         val sb = StringBuilder()
         sb.append(date).append("\n")
+        sb.append("\n")
         bigEnv?.let {
+            sb.append("指数系统：")
             sb.append(it.value).append("\n")
                 .append(it.desc).append("\n")
         }
-        sb.append(envDesc).append("\n")
-        sb.append(lastThink).append("\n")
+        sb.append("\n昨日盘面解析：")
+        sb.append(envDesc).append("\n\n")
+        sb.append("昨日反思：")
+        sb.append(lastThink).append("\n\n")
+        sb.append("当前主线：\n")
         for (plot in mainPlot) {
             sb.append(plot.name).append("\n")
             sb.append(plot.desc).append("\n")
-            sb.append(plot.core).append("\n")
+            sb.append(plot.core).append("\n\n")
         }
+        sb.append("交易计划：\n")
         for (plan in nextDayPlan) {
             sb.append(plan.title).append("\n")
-            sb.append(plan.desc).append("\n")
+            sb.append("理由：").append(plan.desc).append("\n\n")
         }
         return sb.toString()
     }

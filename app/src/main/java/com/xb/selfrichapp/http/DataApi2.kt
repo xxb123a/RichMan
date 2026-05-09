@@ -37,12 +37,9 @@ import javax.net.ssl.*
  */
 object DataApi2 {
     //base host
-    const val base_host = "https://raw.githubusercontent.com/xxb123a/RichMan/app"
-    const val splash = "api/hxsx.json"
+    const val base_host = "https://raw.githubusercontent.com/xxb123a/RichMan/refs/heads/app/api"
+    const val splash = "/hxsx.json"
 
-    private fun getHolidayName(year:Int):String{
-        return "$base_host/Holidays/$year.json"
-    }
 
     private fun createDataName(time: Long): String {
         val sdf = SimpleDateFormat("yyyyMMdd", Locale.getDefault())

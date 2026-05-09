@@ -37,5 +37,12 @@
             android:layout_height="wrap_content"
             android:text="获取"
             />
+
+        <Button
+            android:id="@+id/btn_think_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="核心思维获取"
+            />
     </LinearLayout>
 </ScrollView>

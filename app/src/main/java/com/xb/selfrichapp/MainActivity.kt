@@ -1,6 +1,7 @@
 package com.xb.selfrichapp
 
 import android.graphics.Color
+import android.icu.util.Calendar
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -8,9 +9,12 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.act.CommonSettingActivity
+import com.xb.selfrichapp.act.DataThinkActivity
+import com.xb.selfrichapp.act.TextShowActivity
 import com.xb.selfrichapp.entity.DayDataEntity
 import com.xb.selfrichapp.manager.WorkModeManager
 import com.xb.selfrichapp.prefs.Prefs
+import com.xb.selfrichapp.tool.ToastTools
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +25,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+        if(hour == 9){
+            showCoreThink(true)
+        }
     }
 
     override fun onResume() {
@@ -57,6 +65,12 @@ class MainActivity : AppCompatActivity() {
         menu?.add(0, R.id.main_setting, 0, "设置")?.apply {
             setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
         }
+        menu?.add(1, R.id.main_core_think, 1, "核心思想")?.apply {
+            setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
+        }
+        menu?.add(2, R.id.main_data_think, 1, "数据分析")?.apply {
+            setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
+        }
         return true
     }
 
@@ -65,7 +79,24 @@ class MainActivity : AppCompatActivity() {
             R.id.main_setting -> {
                 CommonSettingActivity.launch(this)
             }
+            R.id.main_core_think -> {
+                showCoreThink(false)
+            }
+            R.id.main_data_think -> {
+                startDataThink()
+            }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun showCoreThink(delay: Boolean){
+        WorkModeManager.getCoreThink(false){
+            if(it == null) return@getCoreThink
+            TextShowActivity.launch(this,it.title,it.toStrShow(),delay)
+        }
+    }
+
+    private fun startDataThink(){
+        DataThinkActivity.launch(this)
     }
 }

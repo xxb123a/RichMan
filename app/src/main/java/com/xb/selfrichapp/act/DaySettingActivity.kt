@@ -7,15 +7,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import com.xb.selfrichapp.R
+import com.xb.selfrichapp.http.DataApi2
 import com.xb.selfrichapp.manager.WorkModeManager
 import com.xb.selfrichapp.prefs.Prefs
 import com.xb.selfrichapp.tool.ToastTools
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Calendar
+import java.util.Locale
 
 /**
  *_    .--,       .--,
@@ -61,6 +62,11 @@ class DaySettingActivity : AppCompatActivity() {
             }
             requestDayData(time)
         }
+        commonClick(R.id.btn_think_get) {
+            WorkModeManager.getCoreThink(true){
+                ToastTools.showText("获取成功")
+            }
+        }
         refreshShowTime()
     }
 
@@ -100,7 +106,7 @@ class DaySettingActivity : AppCompatActivity() {
     private fun refreshDayUI(time:Long){
         //先判断是否有数据
         val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        if(DataApi.hasDownloadDayContent(time)){
+        if(DataApi2.hasDownloadDayContent(time)){
             mTvDayStatus.text = "${sdf.format(time)} 已有数据"
             mBtnDay.text = "更新"
         }else{
