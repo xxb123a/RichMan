@@ -58,7 +58,7 @@ object WorkModeManager {
             })
     }
 
-    private fun syncStockRecord(data: StockRecord){
+    private fun syncStockRecord(data: StockRecord,force: Boolean){
         if(data.date.isEmpty()) return
         try {
             val timeSplitArray = data.date.split("-".toRegex())
@@ -74,10 +74,15 @@ object WorkModeManager {
             time.set(Calendar.SECOND,59)
             time.set(Calendar.MILLISECOND,999)
             val max = time.timeInMillis
-            val hasRecord = fetchStockDao().findRecordByTimeArea(min,max)
+            val hasRecord = if(force){
+                fetchStockDao().deleteArea(min,max)
+                false
+            }else{
+                fetchStockDao().findRecordByTimeArea(min,max).isNotEmpty()
+            }
             val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.getDefault())
-            Log.e("rich_man","添加记录-${sdf.format(min)} - ${sdf.format(max)} 是否有记录:${hasRecord.isNotEmpty()}")
-            if(hasRecord.isEmpty()){
+            Log.e("rich_man","添加记录-${sdf.format(min)} - ${sdf.format(max)} 是否有记录:$hasRecord")
+            if(!hasRecord){
                 val entityArray = ArrayList<StockRecordEntity>()
                 for (action in data.action) {
                     val entity = StockRecordEntity()
@@ -100,7 +105,7 @@ object WorkModeManager {
             .map { EntityTools.parseDay(it) }
             .map {
                 it.stockRecord?.let { record ->
-                    syncStockRecord(record)
+                    syncStockRecord(record,isForce)
                 }
                 it
             }

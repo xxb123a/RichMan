@@ -42,4 +42,6 @@ interface StockDataDao {
     fun findRecordLoseMode(min: Long,max: Long): List<StockRecordEntity>
     @Insert
     fun add(data: List<StockRecordEntity>)
+    @Query("delete from action_record where action_time>=:min and action_time <=:max")
+    fun deleteArea(min: Long,max: Long)
 }
